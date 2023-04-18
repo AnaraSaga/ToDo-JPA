@@ -23,7 +23,7 @@ public class ToDo {
 
     @NotNull
     @NotBlank
-    @Column(name = "DescriptionForTodo")
+    @Column(name = "description")
     private String description;
 
     @Column(insertable = true, updatable = false)
