@@ -25,6 +25,7 @@ public class ToDoSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .anyRequest()
                 .fullyAuthenticated()
                 .and()
+                .csrf().disable()       //turn off csrf token to test in postman
                 .httpBasic();
     }
 
